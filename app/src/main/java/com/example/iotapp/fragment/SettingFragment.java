@@ -28,7 +28,7 @@ public class SettingFragment extends Fragment {
         webViewSetting.loadUrl("https://iotwatering-3893b.web.app/setting.html");
         WebSettings webSettings = webViewSetting.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webSettings.setAppCacheEnabled(true);
+        webSettings.setAppCacheEnabled(false);
         return mViewSetting;
     }
 

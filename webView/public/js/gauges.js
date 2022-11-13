@@ -1,4 +1,4 @@
-function createRadGauge(id, minVal, maxVal, unit) {
+function createRadGauge(id, minVal, maxVal, unit) { //Tạo ra một thước đo hiển thị theo bán tròn cho độ ẩm (Lấy trên mạng)
     function polarToCartesian(centerX, centerY, radius, rad) {
         return {
             x: centerX + (radius * Math.cos(rad)),
@@ -50,7 +50,7 @@ function createRadGauge(id, minVal, maxVal, unit) {
     return gauge;
 }
 
-function createVerGauge(id, minVal, maxVal, unit) {
+function createVerGauge(id, minVal, maxVal, unit) { //Tạo ra một thước đo hiển thị theo thẳng đứng cho nhiệt độ (Lấy trên mạng)
     var tmpl =
         '<svg class="vGauge" viewBox="0 0 145 145">' +
         '<rect class="vGauge-base" id="' + id + '_base" x="30" y="25" width="30" height="100"></rect>' +

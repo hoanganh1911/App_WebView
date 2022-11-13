@@ -33,7 +33,7 @@ public class HomeFragment  extends Fragment {
         webView.loadUrl("https://iotwatering-3893b.web.app/");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webSettings.setAppCacheEnabled(true);
+        webSettings.setAppCacheEnabled(false);
         return mView;
     }
 

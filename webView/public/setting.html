@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <link rel="stylesheet" href="css/setting.css">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="js/setting.js"></script>
+</head>
+
+<body style="width: 100vw;height: 100vh;">
+    <!-- position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%); -->
+    <div style="display: flex;flex-direction: column;">
+        <div>
+            <label for="mode">Choose mode:</label>
+            <select id="mode" name="mode">
+                <option value="1">Auto</option>
+                <option value="0">By hand</option>
+            </select>
+        </div>
+        <div>
+            <br><label for="fname">Temperature max:</label>
+            <input type="text" id="nhietdomax" name="nhietdomax"><br><br>
+            <label for="fname">Temperature min:</label>
+            <input type="text" id="nhietdomin" name="nhietdomin"><br><br>
+        </div>
+
+        <button id="updateBtn" style="display: block;width: 20vw;">Update</button>
+    </div>
+
+</body>
+
+</html>

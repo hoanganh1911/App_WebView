@@ -25,7 +25,7 @@ public class HomeFragment  extends Fragment {
     private View mView;
     @Nullable
     @Override
-        public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // Ánh xạ đến web view
         mView = inflater.inflate(R.layout.fragment_home,container,false);
         webView = mView.findViewById(R.id.webviewHome);

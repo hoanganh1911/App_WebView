@@ -15,11 +15,10 @@ document.addEventListener('DOMContentLoaded', function() { //Khi khởi tạo HT
         document.getElementById("showDone").style.display = "none"
     })
 
-    document.getElementById("nhietdomax").addEventListener("input", showDoneFunc);
-    document.getElementById("nhietdomin").addEventListener("input", showDoneFunc);
-
     function showDoneFunc() {
         document.getElementById("showDone").style.display = "none"
     }
+    document.getElementById("nhietdomax").addEventListener("input", showDoneFunc);
+    document.getElementById("nhietdomin").addEventListener("input", showDoneFunc);
 
 })

@@ -4,10 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
+import com.example.iotapp.fragment.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
     public class MainActivity extends AppCompatActivity {
@@ -15,11 +21,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
         private ViewPager mViewPager;
         private MyViewPagerAdapter myViewPagerAdapter;
 
+
         @Override
-        protected void onCreate(Bundle savedInstanceState) {
+            protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-
 
             mbottomNavigationView = findViewById(R.id.bottom_navigation);
             mViewPager = findViewById(R.id.view_paper);

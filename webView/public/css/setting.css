@@ -1,3 +1,10 @@
-#mode {
-    width: 30vw
+select {
+    width: 80vw;
+}
+
+div div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-around;
 }

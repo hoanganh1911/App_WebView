@@ -29,7 +29,7 @@
 </head>
 
 <body style="width: 100vw;height: 100vh;">
-    <h1>Weather Monitoring</h1>
+    <h1>Watering system</h1>
     <div style="display:flex;margin-left:auto;margin-right:auto;width: 100vw;justify-content: center;">
         <div class="gauge-section">
             <h3>Humidity</h3>
@@ -44,9 +44,9 @@
         <h1>Control </h1>
         <div id="DieuKhien">
             <!-- <div id="overlay_x" style="bottom: 0;left: 0;position: fixed;right: 0;top: 0;"></div> -->
-            <p style="padding-right: 10px;"> Status </p>
+            <p style="padding-right: 10px;"> Float </p>
             <label class="switch">
-                <input type="checkbox" id ="swtLed" disabled="disabled">
+                <input type="checkbox" id ="swtLed">
                 <span class="slider round"></span>
         </label>
         </div>
@@ -65,7 +65,9 @@
                 </div>
             </div>
         </div>
-        <div id="mode" style="margin-top: 100px;text-align: center"></div>
+        <div id="mode" style="padding-top: 100px;text-align: center"></div>
+        <div style="text-align: center">Thời gian trên board</div>
+        <div id="thoigiantrenboard" style="text-align: center"></div>
     </div>
 
 </body>

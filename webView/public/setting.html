@@ -28,21 +28,40 @@
 
 <body style="width: 100vw;height: 100vh;">
     <!-- position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%); -->
-    <div style="display: flex;flex-direction: column;">
+    <div style="display: flex;flex-direction: column;align-content: center;width: 80vw;">
         <div>
-            <label for="mode">Choose mode:</label>
+            <label>Choose mode:</label>
             <select id="mode" name="mode">
-                <option value="1">Auto</option>
-                <option value="0">By hand</option>
+                <option value="0">Auto</option>
+                <option value="1">By hand</option>
             </select>
         </div>
-        <div>
-            <br><label for="fname">Temperature max:</label>
+        <div class="setting_back" style="padding-top: 10px;">
+            <label>Mode Type:</label>
+            <select id="mode_select" name="mode_select">
+                <option value="1">Điều khiển theo nhiệt độ</option>
+                <option value="0">Điều khiển theo thời gian</option>
+            </select>
+        </div>
+        <div class="setting_back">
+            <br>
+            <label>Temperature max:</label>
             <input type="text" id="nhietdomax" name="nhietdomax"><br><br>
-            <label for="fname">Temperature min:</label>
+            <label>Temperature min:</label>
             <input type="text" id="nhietdomin" name="nhietdomin"><br><br>
         </div>
-
+        <!-- <div>
+            <br><label>Humidity max:</label>
+            <input type="text" id="doammax" name="doammax"><br><br>
+            <label>Humidity min:</label>
+            <input type="text" id="doammin" name="doammin"><br><br>
+        </div> -->
+        <div>
+            <br><label>Time start:</label>
+            <input type="text" id="caidatthoigianbatdau" name="caidatthoigian"><br><br>
+            <br><label>Time end:</label>
+            <input type="text" id="caidatthoigianketthuc" name="caidatthoigian"><br><br>
+        </div>
         <button id="updateBtn" style="display: block;width: 20vw;">Update</button>
         <div id="showDone" style="padding-top:10px ;display:none">Update done</div>
     </div>
